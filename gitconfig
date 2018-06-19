@@ -1,0 +1,17 @@
+[user]
+    name = Kevin Leimkuhler
+    email = me@kleimkuhler.com
+[alias]
+    a = add
+    c = commit
+    co = checkout
+    d = diff
+    s = status
+    pl = pull
+    ps = push
+[push]
+    default = current
+[pull]
+    rebase = true
+[core]
+    excludesfile = ~/.gitignore

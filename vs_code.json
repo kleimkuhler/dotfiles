@@ -1,0 +1,5 @@
+{
+    "telemetry.enableTelemetry": false,
+    "workbench.colorTheme": "Solarized Light (no bold)",
+    "workbench.startupEditor": "newUntitledFile"
+}

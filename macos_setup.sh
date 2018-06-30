@@ -7,3 +7,8 @@ ln -fs $wd/gitconfig $HOME/.gitconfig
 ln -fs $wd/gitignore $HOME/.gitignore
 ln -fs $wd/tmux.conf $HOME/.tmux.conf
 ln -fs $wd/vimrc $HOME/.vimrc
+
+# Set up Emacs
+mkdir -p $HOME/.emacs.d/config/
+ln -fs $wd/emacs.d/init.el $HOME/.emacs.d/init.el
+ln -fs $wd/emacs.d/config/* $HOME/.emacs.d/config/

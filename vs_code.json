@@ -1,5 +1,7 @@
 {
     "telemetry.enableTelemetry": false,
     "workbench.colorTheme": "Solarized Light (no bold)",
-    "workbench.startupEditor": "newUntitledFile"
+    "workbench.startupEditor": "newUntitledFile",
+    "editor.tabSize": 2,
+    "terminal.integrated.macOptionIsMeta": true
 }

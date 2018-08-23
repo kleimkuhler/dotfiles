@@ -2,6 +2,6 @@
     "telemetry.enableTelemetry": false,
     "workbench.colorTheme": "Solarized Light (no bold)",
     "workbench.startupEditor": "newUntitledFile",
-    "editor.tabSize": 2,
-    "terminal.integrated.macOptionIsMeta": true
+    "terminal.integrated.macOptionIsMeta": true,
+    "latex-workshop.view.pdf.viewer": "tab"
 }

@@ -1,8 +1,9 @@
 [user]
     name = Kevin Leimkuhler
-    email = me@kleimkuhler.com
+    email = kevin@kleimkuhler.com
 [alias]
     a = add
+    br = branch
     c = commit
     co = checkout
     d = diff

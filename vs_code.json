@@ -3,5 +3,5 @@
     "workbench.colorTheme": "Solarized Light (no bold)",
     "workbench.startupEditor": "newUntitledFile",
     "terminal.integrated.macOptionIsMeta": true,
-    "latex-workshop.view.pdf.viewer": "tab"
+    "editor.formatOnSave": true
 }

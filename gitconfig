@@ -5,6 +5,7 @@
     a = add
     br = branch
     c = commit
+    cl = clone
     co = checkout
     d = diff
     s = status

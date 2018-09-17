@@ -22,3 +22,7 @@ $(\
 
 # Let aliases work with sudo
 alias sudo='sudo '
+
+# OPAM configuration
+. /Users/kleimkuhler/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true
+

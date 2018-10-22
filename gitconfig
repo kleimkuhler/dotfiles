@@ -10,7 +10,9 @@
     d = diff
     f = fetch
     m = merge
+    r = rebase
     s = status
+    sm = submodule
     pl = pull
     ps = push
 [push]

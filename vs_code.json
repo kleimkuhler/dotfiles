@@ -1,7 +1,10 @@
 {
     "telemetry.enableTelemetry": false,
-    "workbench.colorTheme": "Solarized Light (no bold)",
     "workbench.startupEditor": "newUntitledFile",
     "terminal.integrated.macOptionIsMeta": true,
-    "editor.formatOnSave": true
+    "python.pythonPath": "/usr/local/bin/python3",
+    "python.jediEnabled": false,
+    "editor.formatOnSave": true,
+    "telemetry.enableCrashReporter": false,
+    "gitlens.advanced.telemetry.enabled": false
 }

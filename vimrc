@@ -57,20 +57,19 @@ syntax on             " syntax highlighting
 set background=light  " use light background for solarized light
 colorscheme solarized " set colorscheme to solarized
 
+" Install vim-plug if it is not already
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
 call plug#begin('~/.vim/plugged')
 
 " Color theme
 Plug 'altercation/vim-colors-solarized'
 
-" Completion engine (for Rust!)
-Plug 'Valloric/YouCompleteMe', { 'do': './install.py --rust-completer' }
-
 " Automatic :nohl when cursor is moved
 Plug 'junegunn/vim-slash'
-
-" Rust
-Plug 'rust-lang/rust.vim'
-Plug 'racer-rust/vim-racer'
-let g:racer_experimental_completer = 1
 
 call plug#end()

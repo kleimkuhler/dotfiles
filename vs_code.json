@@ -1,10 +1,7 @@
 {
-    "telemetry.enableTelemetry": false,
-    "workbench.startupEditor": "newUntitledFile",
-    "terminal.integrated.macOptionIsMeta": true,
-    "python.pythonPath": "/usr/local/bin/python3",
-    "python.jediEnabled": false,
     "editor.formatOnSave": true,
+    "telemetry.enableTelemetry": false,
     "telemetry.enableCrashReporter": false,
-    "gitlens.advanced.telemetry.enabled": false
+    "terminal.integrated.macOptionIsMeta": true,
+    "workbench.startupEditor": "newUntitledFile"
 }

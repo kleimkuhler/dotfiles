@@ -1,4 +1,4 @@
-# Include in path (Rust specific)
+# Additions to path
 export PATH="$HOME/.cargo/bin:$PATH"
 
 # Basic aliases

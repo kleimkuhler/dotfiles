@@ -1,5 +1,5 @@
 # Additions to path
-export PATH="$HOME/.cargo/bin:$PATH"
+set -g fish_user_paths $HOME/.cargo/bin $fish_user_paths
 
 # Basic aliases
 alias g="git"

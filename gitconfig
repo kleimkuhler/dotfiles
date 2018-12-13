@@ -11,7 +11,8 @@
     f = fetch
     m = merge
     r = rebase
-    s = status
+    st = status
+    ss = stash
     sm = submodule
     pl = pull
     ps = push

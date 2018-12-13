@@ -1,7 +1,26 @@
 {
+    "breadcrumbs.enabled": true,
+    "editor.fontFamily": "Inconsolata-g",
     "editor.formatOnSave": true,
-    "telemetry.enableTelemetry": false,
+    "editor.tokenColorCustomizations": {
+        "[Nord]": {
+            "comments": "#576279"
+        }
+    },
+    "gitlens.advanced.telemetry.enabled": false,
+    "git.autofetch": true,
+    "githubPullRequests.hosts": [
+        {
+            "host": "https://github.com",
+            "username": "oauth",
+            "token": "system"
+        }
+    ],
     "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+    "terminal.integrated.fontFamily": "Inconsolata-g",
     "terminal.integrated.macOptionIsMeta": true,
+    "window.zoomLevel": 0,
+    "workbench.colorTheme": "Nord",
     "workbench.startupEditor": "newUntitledFile"
 }

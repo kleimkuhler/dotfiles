@@ -31,7 +31,7 @@
   (add-hook 'racket-repl-mode-hook #'racket-unicode-input-method-enable))
 
 ;; Solarized-theme that defaults to light
-(use-package solarized-theme
-  :config (load-theme 'solarized-light t))
+(use-package nord-theme
+  :config (load-theme 'nord t))
 
 (provide 'packages)

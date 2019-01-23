@@ -53,8 +53,9 @@ xnoremap > >gv  " stay in visual mode when right indenting
 " Netrw settings
 let g:netrw_banner = 0
 
-syntax on         " syntax highlighting
-colorscheme nord  " set colorscheme to Nord
+syntax on             " syntax highlighting
+set background=light  " set background to light for solarized
+colorscheme solarized " set colorscheme to Nord
 
 " Install vim-plug if it is not already
 if empty(glob('~/.vim/autoload/plug.vim'))
@@ -66,6 +67,7 @@ endif
 call plug#begin('~/.vim/plugged')
 
 " Color theme
+Plug 'altercation/vim-colors-solarized'
 Plug 'arcticicestudio/nord-vim'
 Plug 'rakr/vim-one'
 

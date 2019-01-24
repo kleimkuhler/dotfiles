@@ -23,6 +23,16 @@ set whichwrap+=<,>,h,l,[,]      " arrow keys and h/l wrap over lines
 set number  " show line numbers
 set ruler   " show column number
 
+set laststatus=2                             " always show status bar
+set statusline=
+set statusline+=%-10.3n\                     " buffer number
+set statusline+=%f\                          " filename
+set statusline+=%h%m%r%w                     " status flags
+set statusline+=\[%{strlen(&ft)?&ft:'none'}] " file type
+set statusline+=%=                           " right align remainder
+set statusline+=%-14(%l,%c%V%)               " line, character
+set statusline+=%<%P                         " file position
+
 set wildmenu                    " better command completion
 set wildignorecase              " ignore case in command completion
 set wildmode=longest:full,full  " complete longest, alt, cycle
@@ -69,7 +79,6 @@ call plug#begin('~/.vim/plugged')
 " Color theme
 Plug 'altercation/vim-colors-solarized'
 Plug 'arcticicestudio/nord-vim'
-Plug 'rakr/vim-one'
 
 " Automatic :nohl when cursor is moved
 Plug 'junegunn/vim-slash'

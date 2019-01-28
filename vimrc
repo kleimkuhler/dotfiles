@@ -1,3 +1,17 @@
+set shell=/bin/bash " fish does not work well with vim
+
+" Load plugins
+call plug#begin('~/.local/share/nvim/plugged')
+
+" Color theme
+Plug 'altercation/vim-colors-solarized'
+Plug 'arcticicestudio/nord-vim'
+
+" Automatic :nohl when cursor is moved
+Plug 'junegunn/vim-slash'
+
+call plug#end()
+
 set hidden  " hide abandoned buffers
 
 set noswapfile      " don't use swap files
@@ -9,8 +23,8 @@ set autoindent  " use indentation of previous line
 set smartindent " use intelligent indent
 
 set expandtab     " expand TABs to spaces
-set shiftwidth=2  " (auto)indent width
-set softtabstop=2 " number of spaces TAB key expands to when editing
+set shiftwidth=4  " (auto)indent width
+set softtabstop=4 " number of spaces TAB key expands to when editing
 set tabstop=8     " number of spaces TAB key expands to (read man pages on why this is still 8)
 
 set backspace=indent,eol,start  " backspace wraps over lines
@@ -23,7 +37,8 @@ set whichwrap+=<,>,h,l,[,]      " arrow keys and h/l wrap over lines
 set number  " show line numbers
 set ruler   " show column number
 
-set laststatus=2                             " always show status bar
+set laststatus=2    " always show status bar
+
 set statusline=
 set statusline+=%-10.3n\                     " buffer number
 set statusline+=%f\                          " filename
@@ -48,10 +63,14 @@ set sidescrolloff=2   " keep a few columns left/right of the cursor
 set sidescroll=1      " scroll horizontally by one column
 
 " Map leader
-let mapleader=" "
+let mapleader="\<Space>"
+
+" Default mappings
+map H ^
+map L $
 
 " Normal mode mappings
-nnoremap <Space> <Nop>
+nnoremap ; :
 
 " Insert mode mappings
 inoremap fd <esc> " escape insert mode with fd
@@ -63,24 +82,8 @@ xnoremap > >gv  " stay in visual mode when right indenting
 " Netrw settings
 let g:netrw_banner = 0
 
+" Theme settings
 syntax on             " syntax highlighting
 set background=light  " set background to light for solarized
-colorscheme solarized " set colorscheme to Nord
+colorscheme solarized " set colorscheme to solarized
 
-" Install vim-plug if it is not already
-if empty(glob('~/.vim/autoload/plug.vim'))
-  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
-    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
-endif
-
-call plug#begin('~/.vim/plugged')
-
-" Color theme
-Plug 'altercation/vim-colors-solarized'
-Plug 'arcticicestudio/nord-vim'
-
-" Automatic :nohl when cursor is moved
-Plug 'junegunn/vim-slash'
-
-call plug#end()

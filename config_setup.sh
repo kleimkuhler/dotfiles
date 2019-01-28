@@ -19,4 +19,6 @@ ln -fs $HOME/.dotfiles/gitignore $HOME/.gitignore
 ln -fs $HOME/.dotfiles/tmux.conf $HOME/.tmux.conf
 
 # Set up vim
+mkdir -p $HOME/.config/nvim
+ln -fs $HOME/.dotfiles/vimrc $HOME/.config/nvim/init.vim
 ln -fs $HOME/.dotfiles/vimrc $HOME/.vimrc

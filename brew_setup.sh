@@ -1,5 +1,9 @@
 # Install Homebrew
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+if which -s brew; then
+    brew update
+else
+    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+fi
 
 # Install core packages via Homebrew
-brew install bat exa fd fish git ripgrep tmux tokei 
+brew install autojump bat exa fd fish git neovim ripgrep reattach-to-user-namespace tmux tokei

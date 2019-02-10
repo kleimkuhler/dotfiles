@@ -1,21 +1,6 @@
 [user]
     name = Kevin Leimkuhler
     email = kevin@kleimkuhler.com
-[alias]
-    a = add
-    b = branch
-    c = commit
-    cl = clone
-    co = checkout
-    d = diff
-    f = fetch
-    m = merge
-    r = rebase
-    st = status
-    ss = stash
-    sm = submodule
-    pl = pull
-    ps = push
 [push]
     default = current
 [pull]

@@ -30,9 +30,9 @@ abbr -a -g gr  'git rebase'
 abbr -a -g grm 'git remote'
 abbr -a -g gpl 'git pull'
 abbr -a -g gps 'git push'
+abbr -a -g gs  'git status'
 abbr -a -g gss 'git stash'
-abbr -a -g gst 'git status'
-abbr -a -g gsm 'git submodule'
+abbr -a -g gsu 'git submodule'
 
 if type -q exa
     abbr -a -g l  'exa'
@@ -48,6 +48,7 @@ end
 # Additions to $fish_user_paths
 set -g fish_user_paths $HOME/.cargo/bin $fish_user_paths
 set -g fish_user_paths $HOME/Projects/go/bin $fish_user_paths
+set -g fish_user_paths $HOME/.bin $fish_user_paths
 
 # Environment variables
 if type -q bat

@@ -1,3 +1,9 @@
+;;; prelude.el --- Configurations that should run first
+
+;;; Commentary:
+
+;;; Code:
+
 ;; Redirect customizations into separate file
 (let ((custom-path "~/.emacs.d/custom.el"))
   (if (not (file-exists-p custom-path))
@@ -10,3 +16,5 @@
 (setq exec-path (append exec-path '("/usr/local/bin")))
 
 (provide 'prelude)
+
+;;; prelude.el ends here

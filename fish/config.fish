@@ -7,8 +7,16 @@ end
 # Abbreviations
 abbr -a -g co    code
 abbr -a -g e     nvim
+abbr -a -g k     kubectl
 abbr -a -g mkdir 'mkdir -p'
+abbr -a -g rash  'racket -l rash/repl --'
 
+# Linkerd!
+abbr -a -g l5d        linkerd
+abbr -a -g l5d-edge   'curl -sL https://run.linkerd.io/install-edge | sh'
+abbr -a -g l5d-stable 'curl -sL https://run.linkerd.io/install | sh'
+
+# Cargo
 abbr -a -g c   cargo
 abbr -a -g cb  'cargo build'
 abbr -a -g cc  'cargo check'
@@ -16,6 +24,7 @@ abbr -a -g ccl 'cargo clean'
 abbr -a -g cr  'cargo run'
 abbr -a -g ct  'cargo test'
 
+# Git
 abbr -a -g g   git
 abbr -a -g ga  'git add'
 abbr -a -g gb  'git branch'
@@ -34,6 +43,7 @@ abbr -a -g gs  'git status'
 abbr -a -g gss 'git stash'
 abbr -a -g gsu 'git submodule'
 
+# Exa
 if type -q exa
     abbr -a -g l  'exa'
     abbr -a -g la 'exa -al --git'
@@ -46,9 +56,10 @@ else
 end
 
 # Additions to $fish_user_paths
-set -g fish_user_paths $HOME/.cargo/bin $fish_user_paths
-set -g fish_user_paths $HOME/Projects/go/bin $fish_user_paths
 set -g fish_user_paths $HOME/.bin $fish_user_paths
+set -g fish_user_paths $HOME/.cargo/bin $fish_user_paths
+set -g fish_user_paths $HOME/.linkerd2/bin $fish_user_paths
+set -g fish_user_paths $HOME/Projects/go/bin $fish_user_paths
 
 # Environment variables
 if type -q bat

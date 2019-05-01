@@ -61,6 +61,9 @@
 
 (set-frame-font "Inconsolata-16" nil t)
 
+;; Set default font and size
+(set-frame-font "Inconsolata 14" nil t)
+
 ;; -----
 ;; Hooks
 ;; -----

@@ -4,8 +4,8 @@ set shell=/bin/bash " fish does not work well with vim
 call plug#begin('~/.local/share/nvim/plugged')
 
 " Color theme
+Plug 'kaicataldo/material.vim'
 Plug 'altercation/vim-colors-solarized'
-Plug 'arcticicestudio/nord-vim'
 
 " Automatic :nohl when cursor is moved
 Plug 'junegunn/vim-slash'
@@ -84,6 +84,7 @@ let g:netrw_banner = 0
 
 " Theme settings
 syntax on             " syntax highlighting
-set background=light  " set background to light for solarized
-colorscheme solarized " set colorscheme to solarized
+colorscheme material  " set colorscheme to material-theme
+let g:material_theme_style = 'palenight'
+let g:material_terminal_italics = 1
 

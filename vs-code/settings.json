@@ -1,0 +1,43 @@
+{
+    "breadcrumbs.enabled": true,
+    "editor.fontFamily": "Inconsolata-g",
+    "editor.tokenColorCustomizations": {
+        "[Nord]": {
+            "comments": "#576279"
+        }
+    },
+    "files.eol": "\n",
+    "git.autofetch": true,
+    "gitlens.advanced.telemetry.enabled": false,
+    "[markdown]": {
+        "editor.wordWrap": "wordWrapColumn",
+        "editor.wordWrapColumn": 80,
+    },
+    "go.useLanguageServer": true,
+    "[go]": {
+        "editor.snippetSuggestions": "none",
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true
+        }
+    },
+    "gopls": {
+        "usePlaceholders": true
+    },
+    "rust-analyzer.enableCargoWatchOnStartup": "enabled",
+    "python.pythonPath": "/usr/local/bin/python3",
+    "python.jediEnabled": false,
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+    "terminal.explorerKind": "external",
+    "terminal.integrated.fontFamily": "Inconsolata-g",
+    "terminal.integrated.macOptionIsMeta": true,
+    "workbench.startupEditor": "newUntitledFile",
+    "python.dataScience.sendSelectionToInteractiveWindow": true,
+    "vs-kubernetes": {
+        "vs-kubernetes.helm-path": "/Users/kleimkuhler/.vs-kubernetes/tools/helm/darwin-amd64/helm",
+        "vs-kubernetes.minikube-path": "/Users/kleimkuhler/.vs-kubernetes/tools/minikube/darwin-amd64/minikube",
+        "vs-kubernetes.draft-path": "/Users/kleimkuhler/.vs-kubernetes/tools/draft/darwin-amd64/draft"
+    },
+    "workbench.colorTheme": "Material Theme Palenight",
+    "editor.formatOnSave": true,
+}

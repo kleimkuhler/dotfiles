@@ -9,6 +9,7 @@ chsh -s $(which fish)
 
 mkdir -p $HOME/.config/fish/functions
 ln -fs $HOME/.dotfiles/fish/config.fish $HOME/.config/fish/config.fish
+ln -fs $HOME/.dotfiles/fish/fishfile $HOME/.config/fish/fishfile
 ln -fs $HOME/.dotfiles/fish/functions/fish_prompt.fish $HOME/.config/fish/functions/fish_prompt.fish
 
 # Set up git

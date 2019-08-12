@@ -12,7 +12,7 @@ abbr -a -g mkdir 'mkdir -p'
 abbr -a -g rash  'racket -l rash/repl --'
 
 # Linkerd!
-abbr -a -g l5d        linkerd
+abbr -a -g sm         linkerd
 abbr -a -g l5d-edge   'curl -sL https://run.linkerd.io/install-edge | sh'
 abbr -a -g l5d-stable 'curl -sL https://run.linkerd.io/install | sh'
 
@@ -63,13 +63,9 @@ set -g fish_user_paths $HOME/Projects/go/bin $fish_user_paths
 
 # Environment variables
 if type -q bat
-    set -x BAT_THEME "GitHub"
+    set -x BAT_THEME "TwoDark"
 end
 
 if type -q go
     set -x GOPATH $HOME/Projects/go
-end
-
-if test -f /usr/local/share/autojump/autojump.fish
-    source /usr/local/share/autojump/autojump.fish
 end

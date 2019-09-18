@@ -6,4 +6,4 @@ else
 fi
 
 # Install core packages via Homebrew
-brew install autojump bat exa fd fish git neovim ripgrep reattach-to-user-namespace tmux tokei
+brew install bat exa fd fish git neovim ripgrep reattach-to-user-namespace tmux tokei

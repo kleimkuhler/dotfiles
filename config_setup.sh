@@ -1,7 +1,7 @@
-# Set up emacs
-mkdir -p $HOME/.emacs.d/config/
-ln -fs $HOME/.dotfiles/emacs.d/init.el $HOME/.emacs.d/init.el
-ln -fs $HOME/.dotfiles/emacs.d/config/* $HOME/.emacs.d/config/
+# Set up emacs (I now rarely use emacs--uncomment if needed)
+# mkdir -p $HOME/.emacs.d/config/
+# ln -fs $HOME/.dotfiles/emacs.d/init.el $HOME/.emacs.d/init.el
+# ln -fs $HOME/.dotfiles/emacs.d/config/* $HOME/.emacs.d/config/
 
 # Set up fish
 echo $(which fish) | sudo tee -a /etc/shells

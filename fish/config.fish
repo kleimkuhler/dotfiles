@@ -1,15 +1,15 @@
-# Always replace the current shell with a tmux client
-if status is-interactive
-and not set -q TMUX
-   tmux attach || exec tmux new-session && exit
-end
+# Replace the current shell with a tmux client
+# Commented out for initial setups
+# if status is-interactive
+# and not set -q TMUX
+#    tmux attach || exec tmux new-session && exit
+# end
 
 # Abbreviations
 abbr -a -g co    code
 abbr -a -g e     nvim
 abbr -a -g k     kubectl
 abbr -a -g mkdir 'mkdir -p'
-abbr -a -g rash  'racket -l rash/repl --'
 
 # Linkerd!
 abbr -a -g sm         linkerd
@@ -62,6 +62,8 @@ set -g fish_user_paths $HOME/.linkerd2/bin $fish_user_paths
 set -g fish_user_paths $HOME/Projects/go/bin $fish_user_paths
 
 # Environment variables
+set -x DOCKER_HOST "ssh://kleimkuhler@perf.buoyant.space:2244"
+
 if type -q bat
     set -x BAT_THEME "TwoDark"
 end

@@ -1,5 +1,11 @@
 set shell=/bin/bash " fish does not work well with vim
 
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
 " Load plugins
 call plug#begin('~/.local/share/nvim/plugged')
 
@@ -84,7 +90,3 @@ let g:netrw_banner = 0
 
 " Theme settings
 syntax on             " syntax highlighting
-colorscheme material  " set colorscheme to material-theme
-let g:material_theme_style = 'palenight'
-let g:material_terminal_italics = 1
-

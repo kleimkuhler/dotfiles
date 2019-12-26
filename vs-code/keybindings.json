@@ -1,12 +1,17 @@
-// Place your key bindings in this file to overwrite the defaults
 [
+    {
+        "key": "ctrl+`",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "terminalFocus"
+    },
     {
         "key": "cmd+]",
         "command": "workbench.action.nextEditor"
     },
     {
-        "key": "cmd+[",
-        "command": "workbench.action.previousEditor"
+        "key": "cmd+]",
+        "command": "workbench.action.nextPanelView",
+        "when": "panelFocus"
     },
     {
         "key": "cmd+]",
@@ -15,13 +20,7 @@
     },
     {
         "key": "cmd+[",
-        "command": "workbench.action.previousSideBarView",
-        "when": "sideBarFocus"
-    },
-    {
-        "key": "cmd+]",
-        "command": "workbench.action.nextPanelView",
-        "when": "panelFocus"
+        "command": "workbench.action.previousEditor"
     },
     {
         "key": "cmd+[",
@@ -29,16 +28,14 @@
         "when": "panelFocus"
     },
     {
-        "key": "ctrl+shift+f",
-        "command": "workbench.action.toggleMaximizedPanel"
+        "key": "cmd+[",
+        "command": "workbench.action.previousSideBarView",
+        "when": "sideBarFocus"
     },
     {
-        "key": "ctrl+shift+c",
-        "command": "workbench.action.terminal.new"
-    },
-    {
-        "key": "ctrl+shift+x",
-        "command": "workbench.action.terminal.kill"
+        "key": "ctrl+`",
+        "command": "workbench.action.terminal.focus",
+        "when": "!terminalFocus"
     },
     {
         "key": "ctrl+shift+n",
@@ -47,15 +44,17 @@
     {
         "key": "ctrl+shift+p",
         "command": "workbench.action.terminal.focusPrevious"
-    }
-    {
-        "key": "ctrl+`",
-        "command": "workbench.action.terminal.focus",
-        "when": "!terminalFocus"
     },
     {
-        "key": "ctrl+`",
-        "command": "workbench.action.focusActiveEditorGroup",
-        "when": "terminalFocus"
+        "key": "ctrl+shift+x",
+        "command": "workbench.action.terminal.kill"
+    },
+    {
+        "key": "ctrl+shift+c",
+        "command": "workbench.action.terminal.new"
+    },
+    {
+        "key": "ctrl+shift+f",
+        "command": "workbench.action.toggleMaximizedPanel"
     }
 ]

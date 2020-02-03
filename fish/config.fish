@@ -1,12 +1,13 @@
 # Replace the current shell with a tmux client
 # Commented out for initial setups
-# if status is-interactive
-# and not set -q TMUX
-#    tmux attach || exec tmux new-session && exit
-# end
+
+# Set prompt
+# Commented out for initial setups
+# starship init fish | source
 
 # Abbreviations
 abbr -a -g co    code
+abbr -a -g d     docker
 abbr -a -g e     nvim
 abbr -a -g k     kubectl
 abbr -a -g mkdir 'mkdir -p'
@@ -62,10 +63,18 @@ set -g fish_user_paths $HOME/.linkerd2/bin $fish_user_paths
 set -g fish_user_paths $HOME/Projects/go/bin $fish_user_paths
 
 # Environment variables
-set -x DOCKER_HOST "ssh://kleimkuhler@perf.buoyant.space:2244"
+set -x RUSTFLAGS '--cfg=docsrs'
+
+# Bootstrap fisher installation
+if not functions -q fisher
+    set -q XDG_CONFIG_HOME; or set XDG_CONFIG_HOME ~/.config
+    curl https://git.io/fisher --create-dirs -sLo $XDG_CONFIG_HOME/fish/functions/fisher.fish
+    fish -c fisher
+end
 
 if type -q bat
     set -x BAT_THEME "TwoDark"
+    abbr -a -g cat bat
 end
 
 if type -q go

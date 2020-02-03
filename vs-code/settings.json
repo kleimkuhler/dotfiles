@@ -1,6 +1,6 @@
 {
     "breadcrumbs.enabled": true,
-    "editor.fontFamily": "Inconsolata-g",
+    "editor.cursorSurroundingLines": 5,
     "editor.formatOnPaste": true,
     "editor.formatOnType": true,
     "editor.formatOnSave": true,
@@ -9,7 +9,8 @@
     "gitlens.advanced.telemetry.enabled": false,
     "[markdown]": {
         "editor.wordWrap": "wordWrapColumn",
-        "editor.wordWrapColumn": 80,
+        "editor.wordWrapColumn": 79,
+        "rewrap.wrappingColumn": 79,
     },
     "go.useLanguageServer": true,
     "[go]": {
@@ -19,13 +20,11 @@
     },
     "gopls": {
         "completeUnimported": true,
+        "deepCompletion": true,
         "usePlaceholders": true,
     },
     "rust-analyzer.enableCargoWatchOnStartup": "enabled",
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
-    "terminal.integrated.fontFamily": "Inconsolata-g",
-    "terminal.integrated.macOptionIsMeta": true,
     "workbench.startupEditor": "newUntitledFile",
-    "workbench.colorTheme": "Solarized Light",
 }

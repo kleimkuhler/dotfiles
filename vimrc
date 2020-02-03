@@ -1,17 +1,17 @@
 set shell=/bin/bash " fish does not work well with vim
 
-if empty(glob('~/.vim/autoload/plug.vim'))
-  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
-    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
-endif
+" Automatically install vim-plug
+if empty(glob('~/.config/nvim/autoload/plug.vim'))
+    silent !curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs
+                \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+    autocmd VimEnter * PlugInstall
+endif     
 
 " Load plugins
-call plug#begin('~/.local/share/nvim/plugged')
+call plug#begin('~/.config/nvim/plugged')
 
 " Color theme
-Plug 'kaicataldo/material.vim'
-Plug 'altercation/vim-colors-solarized'
+Plug 'drewtempelmeyer/palenight.vim'
 
 " Automatic :nohl when cursor is moved
 Plug 'junegunn/vim-slash'
@@ -89,4 +89,10 @@ xnoremap > >gv  " stay in visual mode when right indenting
 let g:netrw_banner = 0
 
 " Theme settings
-syntax on             " syntax highlighting
+if (has("termguicolors"))
+  set termguicolors
+endif
+
+set background=dark
+colorscheme palenight
+syntax on   " syntax highlighting

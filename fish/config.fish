@@ -1,9 +1,13 @@
 # Replace the current shell with a tmux client
 # Commented out for initial setups
+if status is-interactive
+and not set -q TMUX
+   tmux attach || exec tmux new-session && exit
+end
 
 # Set prompt
 # Commented out for initial setups
-# starship init fish | source
+starship init fish | source
 
 # Abbreviations
 abbr -a -g co    code
@@ -56,14 +60,17 @@ else
     abbr -a -g ll 'ls -l'
 end
 
+# Ripgrep
+if type -q rg
+    abbr -a -g grep rg
+end
+
 # Additions to $fish_user_paths
 set -g fish_user_paths $HOME/.bin $fish_user_paths
 set -g fish_user_paths $HOME/.cargo/bin $fish_user_paths
 set -g fish_user_paths $HOME/.linkerd2/bin $fish_user_paths
 set -g fish_user_paths $HOME/Projects/go/bin $fish_user_paths
-
-# Environment variables
-set -x RUSTFLAGS '--cfg=docsrs'
+set -g fish_user_paths "/usr/local/opt/binutils/bin" $fish_user_paths
 
 # Bootstrap fisher installation
 if not functions -q fisher

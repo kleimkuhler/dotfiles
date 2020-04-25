@@ -1,22 +1,27 @@
 {
     "breadcrumbs.enabled": true,
     "editor.cursorSurroundingLines": 5,
+    "editor.fontFamily": "Hack, Menlo, Monaco, 'Courier New', monospace",
     "editor.formatOnPaste": true,
     "editor.formatOnType": true,
-    "editor.formatOnSave": true,
     "files.eol": "\n",
     "git.autofetch": true,
     "gitlens.advanced.telemetry.enabled": false,
     "[markdown]": {
         "editor.wordWrap": "wordWrapColumn",
         "editor.wordWrapColumn": 79,
-        "rewrap.wrappingColumn": 79,
+        "rewrap.wrappingColumn": 78,
     },
     "go.useLanguageServer": true,
     "[go]": {
         "editor.codeActionsOnSave": {
-            "source.organizeImports": true
-        }
+            "source.organizeImports": true,
+        },
+    },
+    "[go.mod]": {
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true,
+        },
     },
     "gopls": {
         "completeUnimported": true,
@@ -26,5 +31,10 @@
     "rust-analyzer.enableCargoWatchOnStartup": "enabled",
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
+    "terminal.integrated.fontFamily": "Hack",
+    "terminal.integrated.macOptionIsMeta": true,
+    "workbench.colorTheme": "Solarized Light (no bold)",
     "workbench.startupEditor": "newUntitledFile",
+    "go.toolsGopath": "/Users/kleimkuhler/Projects/go",
+    "editor.formatOnSave": true,
 }

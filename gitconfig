@@ -6,4 +6,5 @@
 [pull]
     rebase = true
 [core]
+    editor = nvim
     excludesfile = ~/.gitignore

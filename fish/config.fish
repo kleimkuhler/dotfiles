@@ -70,7 +70,6 @@ set -g fish_user_paths $HOME/.bin $fish_user_paths
 set -g fish_user_paths $HOME/.cargo/bin $fish_user_paths
 set -g fish_user_paths $HOME/.linkerd2/bin $fish_user_paths
 set -g fish_user_paths $HOME/Projects/go/bin $fish_user_paths
-set -g fish_user_paths "/usr/local/opt/binutils/bin" $fish_user_paths
 
 # Bootstrap fisher installation
 if not functions -q fisher
@@ -80,7 +79,7 @@ if not functions -q fisher
 end
 
 if type -q bat
-    set -x BAT_THEME "TwoDark"
+    set -x BAT_THEME 'Solarized (light)'
     abbr -a -g cat bat
 end
 

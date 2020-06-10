@@ -12,6 +12,7 @@ call plug#begin('~/.config/nvim/plugged')
 
 " Color theme
 Plug 'drewtempelmeyer/palenight.vim'
+Plug 'iCyMind/NeoSolarized'
 
 " Automatic :nohl when cursor is moved
 Plug 'junegunn/vim-slash'
@@ -93,6 +94,6 @@ if (has("termguicolors"))
   set termguicolors
 endif
 
-set background=dark
-colorscheme palenight
+set background=light
+colorscheme NeoSolarized
 syntax on   " syntax highlighting

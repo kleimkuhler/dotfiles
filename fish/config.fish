@@ -1,9 +1,9 @@
 # Replace the current shell with a tmux client
 # Commented out for initial setups
-if status is-interactive
-and not set -q TMUX
-   tmux attach || exec tmux new-session && exit
-end
+# if status is-interactive
+# and not set -q TMUX
+#    tmux attach || exec tmux new-session && exit
+# end
 
 # Set prompt
 # Commented out for initial setups
@@ -18,8 +18,8 @@ abbr -a -g mkdir 'mkdir -p'
 
 # Linkerd!
 abbr -a -g sm         linkerd
-abbr -a -g l5d-edge   'curl -sL https://run.linkerd.io/install-edge | sh'
-abbr -a -g l5d-stable 'curl -sL https://run.linkerd.io/install | sh'
+abbr -a -g sm-edge   'curl -sL https://run.linkerd.io/install-edge | sh'
+abbr -a -g sm-stable 'curl -sL https://run.linkerd.io/install | sh'
 
 # Cargo
 abbr -a -g c   cargo
@@ -70,6 +70,7 @@ set -g fish_user_paths $HOME/.bin $fish_user_paths
 set -g fish_user_paths $HOME/.cargo/bin $fish_user_paths
 set -g fish_user_paths $HOME/.linkerd2/bin $fish_user_paths
 set -g fish_user_paths $HOME/Projects/go/bin $fish_user_paths
+set -g fish_user_paths /usr/local/go/bin $fish_user_paths
 
 # Bootstrap fisher installation
 if not functions -q fisher
@@ -86,3 +87,14 @@ end
 if type -q go
     set -x GOPATH $HOME/Projects/go
 end
+
+# Set Linkerd docker build configurations
+set -x DOCKER_TRACE 1
+set -x DOCKER_BUILDKIT 1
+set -x LINKERD_LOCAL_BUILD_CLI 1
+
+# Load private env vars
+if test -e ~/.private-env
+    source ~/.private-env
+end
+

@@ -8,4 +8,4 @@ else
 fi
 
 # Install core packages via Homebrew
-brew install bat exa fd fish git go neovim ripgrep reattach-to-user-namespace starship tmux
+brew install bat exa fd fish git go neovim htop jq ripgrep reattach-to-user-namespace starship tmux

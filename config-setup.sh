@@ -25,3 +25,6 @@ ln -fs $PWD/tmux.conf $HOME/.tmux.conf
 mkdir -p $HOME/.config/nvim
 ln -fs $PWD/vimrc $HOME/.config/nvim/init.vim
 ln -fs $PWD/vimrc $HOME/.vimrc
+
+# Link private env vars to be filled out
+ln -fs $PWD/private-env $HOME/.private-env

@@ -1,0 +1,7 @@
+# AWS
+# set -x AWS_ACCESS_KEY_ID ###
+# set -x AWS_SECRET_ACCESS_KEY ###
+# set -x AWS_DEFAULT_REGION ###
+
+# GitHub
+# set -x GITHUB_TOKEN ###

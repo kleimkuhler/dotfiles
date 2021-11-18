@@ -68,6 +68,7 @@ end
 # Additions to $fish_user_paths
 set -g fish_user_paths $HOME/.bin $fish_user_paths
 set -g fish_user_paths $HOME/.cargo/bin $fish_user_paths
+set -g fish_user_paths $HOME/.google-cloud-sdk/bin $fish_user_paths
 set -g fish_user_paths $HOME/.linkerd2/bin $fish_user_paths
 set -g fish_user_paths $HOME/Projects/go/bin $fish_user_paths
 set -g fish_user_paths /usr/local/go/bin $fish_user_paths
@@ -80,7 +81,6 @@ if not functions -q fisher
 end
 
 if type -q bat
-    set -x BAT_THEME 'Solarized (light)'
     abbr -a -g cat bat
 end
 
@@ -98,3 +98,5 @@ if test -e ~/.private-env
     source ~/.private-env
 end
 
+# Set docker host to dev machine when on local
+# set -x DOCKER_HOST "ssh://dev"

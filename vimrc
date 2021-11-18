@@ -5,14 +5,12 @@ if empty(glob('~/.config/nvim/autoload/plug.vim'))
     silent !curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs
                 \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
     autocmd VimEnter * PlugInstall
-endif     
+endif
 
 " Load plugins
 call plug#begin('~/.config/nvim/plugged')
 
 " Color theme
-Plug 'drewtempelmeyer/palenight.vim'
-Plug 'iCyMind/NeoSolarized'
 
 " Automatic :nohl when cursor is moved
 Plug 'junegunn/vim-slash'
@@ -94,6 +92,4 @@ if (has("termguicolors"))
   set termguicolors
 endif
 
-set background=light
-colorscheme NeoSolarized
 syntax on   " syntax highlighting

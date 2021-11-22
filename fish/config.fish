@@ -23,13 +23,15 @@ starship init fish |source
 abbr -a -g co    code
 abbr -a -g d     docker
 abbr -a -g e     nvim
+abbr -a -g k3    k3d
 abbr -a -g k     kubectl
+abbr -a -g le    less
 abbr -a -g mkdir 'mkdir -p'
 
 # Linkerd!
 abbr -a -g sm         linkerd
-abbr -a -g sm-edge   'curl -sL https://run.linkerd.io/install-edge | sh'
-abbr -a -g sm-stable 'curl -sL https://run.linkerd.io/install | sh'
+abbr -a -g sm-edge   'curl -sL https://run.linkerd.io/install-edge |sh'
+abbr -a -g sm-stable 'curl -sL https://run.linkerd.io/install |sh'
 
 # Cargo
 abbr -a -g c   cargo
@@ -84,6 +86,7 @@ end
 
 if type -q bat
     abbr -a -g cat bat
+    abbr -a -g b   bat
 end
 
 if type -q go

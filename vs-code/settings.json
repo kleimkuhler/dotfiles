@@ -71,5 +71,6 @@
             ]
         }
     },
-    "terminal.integrated.defaultProfile.osx": "fish"
+    "terminal.integrated.defaultProfile.osx": "fish",
+    "workbench.colorTheme": "Default Light+"
 }

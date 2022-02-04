@@ -39,8 +39,7 @@
     "go.toolsGopath": "~/Projects/go",
     "remote.SSH.useLocalServer": false,
     "remote.SSH.remotePlatform": {
-        "dev": "linux",
-        "dev1": "linux"
+        "dev": "linux"
     },
     "editor.formatOnSave": true,
     "go.toolsManagement.autoUpdate": true,

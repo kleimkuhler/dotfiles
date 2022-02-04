@@ -89,6 +89,12 @@ if type -q bat
     abbr -a -g b   bat
 end
 
+if type -q nvim
+    set -x EDITOR nvim
+else
+    set -x EDITOR vim
+end
+
 if type -q go
     set -x GOPATH $HOME/Projects/go
 end

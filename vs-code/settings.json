@@ -2,7 +2,6 @@
     "breadcrumbs.enabled": true,
     "diffEditor.ignoreTrimWhitespace": false,
     "editor.cursorSurroundingLines": 5,
-    // "editor.fontFamily": "Hack, Menlo, Monaco, 'Courier New', monospace",
     "editor.fontSize": 11,
     "editor.formatOnPaste": true,
     "editor.formatOnType": true,
@@ -12,7 +11,6 @@
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
     "git.autofetch": true,
-    "gitlens.advanced.telemetry.enabled": false,
     "[markdown]": {
         "editor.wordWrap": "wordWrapColumn",
         "editor.wordWrapColumn": 80,
@@ -34,43 +32,21 @@
         "deepCompletion": true,
         "usePlaceholders": true,
     },
-    "rust-analyzer.enableCargoWatchOnStartup": "enabled",
-    "telemetry.enableCrashReporter": false,
-    "telemetry.enableTelemetry": false,
-    // "terminal.integrated.fontFamily": "Hack",
+    "telemetry.telemetryLevel": "off",
     "terminal.integrated.fontSize": 11,
     "terminal.integrated.macOptionIsMeta": true,
     "workbench.startupEditor": "newUntitledFile",
     "go.toolsGopath": "~/Projects/go",
     "remote.SSH.useLocalServer": false,
     "remote.SSH.remotePlatform": {
-        "dev": "linux"
+        "dev": "linux",
+        "dev1": "linux"
     },
     "editor.formatOnSave": true,
     "go.toolsManagement.autoUpdate": true,
     "window.autoDetectColorScheme": true,
     "terminal.integrated.scrollback": 5000,
-    "terminal.integrated.profiles.osx": {
-        "bash": {
-            "path": "bash",
-            "args": [
-                "-l"
-            ],
-            "icon": "terminal-bash"
-        },
-        "zsh": {
-            "path": "zsh",
-            "args": [
-                "-l"
-            ]
-        },
-        "fish": {
-            "path": "fish",
-            "args": [
-                "-l"
-            ]
-        }
-    },
     "terminal.integrated.defaultProfile.osx": "fish",
+    "terminal.integrated.defaultProfile.linux": "fish",
     "workbench.colorTheme": "Default Light+"
 }

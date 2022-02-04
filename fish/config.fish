@@ -10,10 +10,10 @@ set -g fish_user_paths /usr/local/go/bin $fish_user_paths
 
 # Replace the current shell with a tmux client
 # Commented out for initial setups
-if status is-interactive
-and not set -q TMUX
-   tmux attach || exec tmux new-session && exit
-end
+# if status is-interactive
+# and not set -q TMUX
+#    tmux attach || exec tmux new-session && exit
+# end
 
 # Set prompt
 # Commented out for initial setups

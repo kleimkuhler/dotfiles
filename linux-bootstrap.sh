@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Update and install packages
-apt update
-apt install -y \
+sudo apt update
+sudo apt install -y \
     fish \
     htop \
     jq \
@@ -38,4 +38,4 @@ ln -fs $PWD/private-env $HOME/.private-env
 
 # Change shell to fish
 echo $(which fish) | sudo tee -a /etc/shells
-chsh -s $(which fish)
+sudo chsh -s $(which fish)

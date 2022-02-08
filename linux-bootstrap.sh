@@ -3,6 +3,7 @@
 # Update and install packages
 sudo apt update
 sudo apt install -y \
+    build-essential \
     fish \
     htop \
     jq \
@@ -37,5 +38,8 @@ ln -fs $PWD/vimrc $HOME/.vimrc
 ln -fs $PWD/private-env $HOME/.private-env
 
 # Change shell to fish
-echo $(which fish) | sudo tee -a /etc/shells
+if ! command -v fish &> /dev/null
+then
+    echo $(which fish) | sudo tee -a /etc/shells
+fi
 sudo chsh -s $(which fish)

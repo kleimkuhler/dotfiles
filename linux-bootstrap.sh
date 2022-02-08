@@ -11,7 +11,7 @@ sudo apt install -y \
     ripgrep
 
 # Install starship prompt
-sh -c "$(curl -fsSL https://starship.rs/install.sh)"
+curl -fsSL https://starship.rs/install.sh |sh -s -- --yes
 
 # Configure fish shell
 mkdir -p $HOME/.config/fish/functions

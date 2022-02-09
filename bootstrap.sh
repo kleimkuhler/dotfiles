@@ -6,6 +6,8 @@ set -eux
 sudo apt update
 sudo apt install -y \
     build-essential \
+    clang \
+    cmake \
     fish \
     htop \
     jq \

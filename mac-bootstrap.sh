@@ -53,5 +53,8 @@ ln -fs $PWD/vs-code/keybindings.json "$HOME/Library/Application Support/Code/Use
 ln -fs $PWD/private-env $HOME/.private-env
 
 # Change shell to fish
-echo $(which fish) | sudo tee -a /etc/shells
-chsh -s $(which fish)
+if ! command -v fish &> /dev/null
+then
+    echo $(which fish) | sudo tee -a /etc/shells
+fi
+sudo chsh -s $(which fish)

@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -eux
+
 # Update and install packages
 sudo apt update
 sudo apt install -y \

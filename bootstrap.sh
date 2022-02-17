@@ -12,7 +12,9 @@ sudo apt install -y \
     htop \
     jq \
     less \
+    libssl-dev \
     neovim \
+    pkg-config \
     ripgrep
 
 # gh

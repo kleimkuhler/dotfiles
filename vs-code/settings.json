@@ -43,9 +43,11 @@
     },
     "editor.formatOnSave": true,
     "go.toolsManagement.autoUpdate": true,
-    "window.autoDetectColorScheme": true,
     "terminal.integrated.scrollback": 5000,
     "terminal.integrated.defaultProfile.osx": "fish",
     "terminal.integrated.defaultProfile.linux": "fish",
-    "workbench.colorTheme": "Default Light+"
+    "go.lintTool": "golangci-lint",
+    "window.autoDetectColorScheme": true,
+    "workbench.colorTheme": "Default Light+",
+    "remote.containers.dotfiles.repository": "https://github.com/kleimkuhler/dotfiles.git",
 }

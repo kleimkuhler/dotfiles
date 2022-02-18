@@ -48,6 +48,10 @@
     "terminal.integrated.defaultProfile.linux": "fish",
     "go.lintTool": "golangci-lint",
     "window.autoDetectColorScheme": true,
-    "workbench.colorTheme": "Default Light+",
     "remote.containers.dotfiles.repository": "https://github.com/kleimkuhler/dotfiles.git",
+    "workbench.colorTheme": "Default Light+",
+    "remote.containers.defaultExtensions": [
+        "eamodio.gitlens",
+        "GitHub.vscode-pull-request-github"
+    ]
 }

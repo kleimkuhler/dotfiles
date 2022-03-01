@@ -4,6 +4,7 @@ set -g fish_user_paths $HOME/.cargo/bin $fish_user_paths
 set -g fish_user_paths $HOME/.google-cloud-sdk/bin $fish_user_paths
 set -g fish_user_paths $HOME/.linkerd2/bin $fish_user_paths
 set -g fish_user_paths $HOME/Projects/go/bin $fish_user_paths
+set -g fish_user_paths /home/linuxbrew/.linuxbrew/bin $fish_user_paths
 set -g fish_user_paths /opt/homebrew/bin $fish_user_paths
 set -g fish_user_paths /usr/local/bin $fish_user_paths
 set -g fish_user_paths /usr/local/go/bin $fish_user_paths

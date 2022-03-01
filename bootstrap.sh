@@ -8,13 +8,17 @@ sudo apt install -y \
     build-essential \
     clang \
     cmake \
+    curl \
     fish \
+    file \
+    git \
     htop \
     jq \
     less \
     libssl-dev \
     neovim \
     pkg-config \
+    procps \
     ripgrep
 
 # gh

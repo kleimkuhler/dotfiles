@@ -45,6 +45,9 @@ then
     sudo apt install -y kubectl
 fi
 
+# helm
+curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash
+
 # rust
 if ! command -v rustup &> /dev/null
 then

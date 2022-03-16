@@ -86,3 +86,12 @@ then
     echo $(which fish) | sudo tee -a /etc/shells
 fi
 sudo chsh -s $(which fish)
+
+# kubectl completions
+exec fish -c 'fisher install evanlucas/fish-kubectl-completions'
+
+# linkerd completions
+if command -v linkerd &> /dev/null
+then
+    linkerd completion fish > ~/.config/fish/completions/linkerd.fish
+fi

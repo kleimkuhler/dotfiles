@@ -59,9 +59,12 @@ curl -fsSL https://starship.rs/install.sh |sh -s -- --yes
 
 # Configure fish shell
 mkdir -p $HOME/.config/fish/functions
+mkdir -p $HOME/.config/fish/completions
 ln -fs $PWD/fish/config.fish $HOME/.config/fish/config.fish
 ln -fs $PWD/fish/fishfile $HOME/.config/fish/fishfile
 ln -fs $PWD/fish/functions/fish_prompt.fish $HOME/.config/fish/functions/fish_prompt.fish
+ln -fs $PWD/fish/completions/kubectl.fish $HOME/.config/fish/completions/kubectl.fish
+ln -fs $PWD/fish/completions/linkerd.fish $HOME/.config/fish/completions/linkerd.fish
 
 # Configure git
 ln -fs $PWD/gitconfig $HOME/.gitconfig
@@ -86,12 +89,3 @@ then
     echo $(which fish) | sudo tee -a /etc/shells
 fi
 sudo chsh -s $(which fish)
-
-# kubectl completions
-exec fish -c 'fisher install evanlucas/fish-kubectl-completions'
-
-# linkerd completions
-if command -v linkerd &> /dev/null
-then
-    linkerd completion fish > ~/.config/fish/completions/linkerd.fish
-fi

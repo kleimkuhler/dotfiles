@@ -75,6 +75,11 @@ mkdir -p $HOME/.config/nvim
 ln -fs $PWD/vimrc $HOME/.config/nvim/init.vim
 ln -fs $PWD/vimrc $HOME/.vimrc
 
+# Configure k3d
+if command -v k3d >/dev/null 2>&1 ; then
+    k3d kubeconfig merge -d 2>/dev/null || true
+fi
+
 # Configure emacs (I now rarely use emacs--uncomment if needed)
 # mkdir -p $HOME/.emacs.d/config/
 # ln -fs $HOME/.dotfiles/emacs.d/init.el $HOME/.emacs.d/init.el

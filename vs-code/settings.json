@@ -4,6 +4,7 @@
     "editor.cursorSurroundingLines": 5,
     "editor.fontSize": 11,
     "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
     "editor.formatOnType": true,
     "editor.minimap.renderCharacters": false,
     "extensions.ignoreRecommendations": false,
@@ -11,48 +12,48 @@
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
     "git.autofetch": true,
-    "[markdown]": {
-        "editor.wordWrap": "wordWrapColumn",
-        "editor.wordWrapColumn": 80,
-        "rewrap.wrappingColumn": 80,
-    },
+    "go.lintTool": "golangci-lint",
+    "go.toolsGopath": "~/Projects/go",
+    "go.toolsManagement.autoUpdate": true,
     "go.useLanguageServer": true,
     "[go]": {
         "editor.codeActionsOnSave": {
-            "source.organizeImports": true,
-        },
+            "source.organizeImports": true
+        }
     },
     "[go.mod]": {
         "editor.codeActionsOnSave": {
-            "source.organizeImports": true,
-        },
+            "source.organizeImports": true
+        }
     },
     "gopls": {
         "completeUnimported": true,
         "deepCompletion": true,
-        "usePlaceholders": true,
+        "usePlaceholders": true
     },
-    "telemetry.telemetryLevel": "off",
-    "terminal.integrated.fontSize": 11,
-    "terminal.integrated.macOptionIsMeta": true,
-    "workbench.startupEditor": "newUntitledFile",
-    "go.toolsGopath": "~/Projects/go",
-    "remote.SSH.useLocalServer": false,
-    "remote.SSH.remotePlatform": {
-        "dev": "linux"
+    "[markdown]": {
+        "editor.wordWrap": "wordWrapColumn",
+        "editor.wordWrapColumn": 80,
+        "rewrap.wrappingColumn": 80
     },
-    "editor.formatOnSave": true,
-    "go.toolsManagement.autoUpdate": true,
-    "terminal.integrated.scrollback": 5000,
-    "terminal.integrated.defaultProfile.osx": "fish",
-    "terminal.integrated.defaultProfile.linux": "fish",
-    "go.lintTool": "golangci-lint",
-    "window.autoDetectColorScheme": true,
-    "remote.containers.dotfiles.repository": "https://github.com/kleimkuhler/dotfiles.git",
-    "workbench.colorTheme": "Default Light+",
     "remote.containers.defaultExtensions": [
         "eamodio.gitlens",
         "GitHub.copilot",
         "GitHub.vscode-pull-request-github"
-    ]
+    ],
+    "remote.containers.dotfiles.repository": "https://github.com/kleimkuhler/dotfiles.git",
+    "remote.SSH.useLocalServer": false,
+    "remote.SSH.remotePlatform": {
+        "dev": "linux"
+    },
+    "rust-analyzer.checkOnSave.command": "clippy",
+    "telemetry.telemetryLevel": "off",
+    "terminal.integrated.defaultProfile.osx": "fish",
+    "terminal.integrated.defaultProfile.linux": "fish",
+    "terminal.integrated.fontSize": 11,
+    "terminal.integrated.macOptionIsMeta": true,
+    "terminal.integrated.scrollback": 5000,
+    "window.autoDetectColorScheme": true,
+    "workbench.colorTheme": "Default Light+",
+    "workbench.startupEditor": "newUntitledFile"
 }

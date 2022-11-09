@@ -4,7 +4,7 @@
 if which -s brew; then
     brew update
 else
-    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
 
 # Install core packages via Homebrew
@@ -46,11 +46,6 @@ ln -fs $PWD/vimrc $HOME/.vimrc
 ln -fs $PWD/vs-code/settings.json "$HOME/Library/Application Support/Code/User/settings.json"
 ln -fs $PWD/vs-code/keybindings.json "$HOME/Library/Application Support/Code/User/keybindings.json"
 
-# Configure emacs (I now rarely use emacs--uncomment if needed)
-# mkdir -p $HOME/.emacs.d/config/
-# ln -fs $HOME/.dotfiles/emacs.d/init.el $HOME/.emacs.d/init.el
-# ln -fs $HOME/.dotfiles/emacs.d/config/* $HOME/.emacs.d/config/
-
 # Link private env vars to be filled out
 ln -fs $PWD/private-env $HOME/.private-env
 
@@ -60,3 +55,8 @@ then
     echo $(which fish) | sudo tee -a /etc/shells
 fi
 sudo chsh -s $(which fish)
+
+# Configure emacs (I now rarely use emacs--uncomment if needed)
+# mkdir -p $HOME/.emacs.d/config/
+# ln -fs $HOME/.dotfiles/emacs.d/init.el $HOME/.emacs.d/init.el
+# ln -fs $HOME/.dotfiles/emacs.d/config/* $HOME/.emacs.d/config/

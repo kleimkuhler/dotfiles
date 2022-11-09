@@ -14,6 +14,8 @@ brew install \
     fd \
     fish \
     go \
+    k3d \
+    k9s \
     neovim \
     htop \
     jq \

@@ -54,6 +54,12 @@ then
     curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 fi
 
+# cargo packages
+if ! command -v cargo &> /dev/null
+then
+    cargo install just
+fi
+
 # Install starship prompt
 curl -fsSL https://starship.rs/install.sh |sh -s -- --yes
 

@@ -1,11 +1,5 @@
 #!/bin/bash
 
-###
-# bootstrap.sh is used for devcontainers. We can assume that most of the tools
-# that would normally be installed will be included in the base image. For a
-# more thorough installation, look at linux-bootstrap.sh or mac-bootstrap.sh.
-###
-
 set -eux
 
 # Update and install core packages
@@ -18,31 +12,31 @@ sudo apt install -y \
     git \
     procps
 
-# # Install Homebrew
-# if which -s brew; then
-#     brew update
-# else
-#     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-# fi
+# Install Homebrew
+if which -s brew; then
+    brew update
+else
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+fi
 
-# # Install Hombrew packages
-# brew install \
-#     gh \
-#     jq \
-#     just \
-#     k3d \
-#     k9s \
-#     neovim \
-#     ripgrep
+# Install Hombrew packages
+brew install \
+    gh \
+    jq \
+    just \
+    k3d \
+    k9s \
+    neovim \
+    ripgrep
 
 # helm
 # curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash
 
 # rust
-# if ! command -v rustup &> /dev/null
-# then
-#     curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-# fi
+if ! command -v rustup &> /dev/null
+then
+    curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+fi
 
 # Configure bash shell
 ln -fs $PWD/bash_profile $HOME/.bash_profile
@@ -75,16 +69,16 @@ ln -fs $PWD/vimrc $HOME/.vimrc
 # fi
 
 # Link private env vars to be filled out
-# ln -fs $PWD/private-env $HOME/.private-env
+ln -fs $PWD/private-env $HOME/.private-env
 
 # Add fish to available shells
-if command -v fish &> /dev/null
-then
-    echo $(which fish) | sudo tee -a /etc/shells
-fi
+# if command -v fish &> /dev/null
+# then
+#     echo $(which fish) | sudo tee -a /etc/shells
+# fi
 
 # Change shell
-sudo chsh -s $(which fish)
+# sudo chsh -s $(which fish)
 
 ####################
 # Old configurations

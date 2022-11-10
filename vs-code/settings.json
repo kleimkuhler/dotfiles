@@ -6,12 +6,22 @@
     "editor.formatOnPaste": true,
     "editor.formatOnSave": true,
     "editor.formatOnType": true,
+    "editor.inlineSuggest.enabled": true,
     "editor.minimap.renderCharacters": false,
     "extensions.ignoreRecommendations": false,
     "files.eol": "\n",
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
+    "files.watcherExclude": {
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/node_modules/*/**": true,
+        "**/.hg/store/**": true,
+        "**/target/**": true
+    },
     "git.autofetch": true,
+    "githubPullRequests.fileListLayout": "tree",
+    "githubPullRequests.pullBranch": "never",
     "go.lintTool": "golangci-lint",
     "go.toolsGopath": "~/Projects/go",
     "go.toolsManagement.autoUpdate": true,
@@ -36,24 +46,25 @@
         "editor.wordWrapColumn": 80,
         "rewrap.wrappingColumn": 80
     },
-    "remote.containers.defaultExtensions": [
-        "eamodio.gitlens",
-        "GitHub.copilot",
-        "GitHub.vscode-pull-request-github"
-    ],
     "remote.containers.dotfiles.repository": "https://github.com/kleimkuhler/dotfiles.git",
     "remote.SSH.useLocalServer": false,
     "remote.SSH.remotePlatform": {
-        "dev": "linux"
+        "dev": "linux",
+        "dev-new": "linux"
     },
     "rust-analyzer.checkOnSave.command": "clippy",
     "telemetry.telemetryLevel": "off",
-    "terminal.integrated.defaultProfile.osx": "fish",
-    "terminal.integrated.defaultProfile.linux": "fish",
     "terminal.integrated.fontSize": 11,
     "terminal.integrated.macOptionIsMeta": true,
     "terminal.integrated.scrollback": 5000,
+    "terminal.integrated.defaultProfile.osx": "fish",
+    "terminal.integrated.defaultProfile.linux": "fish",
+    "redhat.telemetry.enabled": false,
+    "remote.containers.defaultExtensions": [
+        "eamodio.gitlens",
+        "GitHub.vscode-pull-request-github"
+    ],
     "window.autoDetectColorScheme": true,
     "workbench.colorTheme": "Default Light+",
-    "workbench.startupEditor": "newUntitledFile"
+    "workbench.startupEditor": "newUntitledFile",
 }

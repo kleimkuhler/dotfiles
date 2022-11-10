@@ -114,4 +114,4 @@ if test -e ~/.private-env
 end
 
 # Set docker host to dev machine when on local
-# set -x DOCKER_HOST "ssh://dev"
+# set -x DOCKER_HOST "ssh://dev-new"

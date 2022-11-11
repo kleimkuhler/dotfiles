@@ -26,6 +26,7 @@ brew install \
     just \
     k3d \
     k9s \
+    kubectl \
     neovim \
     ripgrep
 

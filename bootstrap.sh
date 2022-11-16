@@ -54,9 +54,9 @@ ln -fs $PWD/vimrc $HOME/.config/nvim/init.vim
 ln -fs $PWD/vimrc $HOME/.vimrc
 
 # Configure k3d
-# if command -v k3d >/dev/null 2>&1 ; then
-#     k3d kubeconfig merge -d 2>/dev/null || true
-# fi
+if command -v k3d >/dev/null 2>&1 ; then
+    k3d kubeconfig merge -d 2>/dev/null || true
+fi
 
 # Add fish to available shells
 if command -v fish &> /dev/null

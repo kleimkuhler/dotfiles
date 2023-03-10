@@ -62,7 +62,8 @@
     "redhat.telemetry.enabled": false,
     "remote.containers.defaultExtensions": [
         "eamodio.gitlens",
-        "GitHub.vscode-pull-request-github"
+        "GitHub.vscode-pull-request-github",
+        "ms-vsliveshare.vsliveshare"
     ],
     "window.autoDetectColorScheme": true,
     "workbench.colorTheme": "Default Light+",

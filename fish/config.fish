@@ -27,6 +27,7 @@ starship init fish |source
 abbr -a -g co    code
 abbr -a -g d     docker
 abbr -a -g e     nvim
+abbr -a -g z     zed
 abbr -a -g k3    k3d
 abbr -a -g k     kubectl
 abbr -a -g le    less

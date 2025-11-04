@@ -1,6 +1,6 @@
 [user]
     name = Kevin Leimkuhler
-    email = kleimkuhler@icloud.com
+    email = kevin.leimkuhler@grafana.com
     # Add signingkey
 	# signingkey = ###
 [push]
@@ -13,8 +13,10 @@
 # [commit]
 # 	gpgsign = true
 [credential "https://github.com"]
-	helper = 
+	helper =
 	helper = !/usr/bin/gh auth git-credential
 [credential "https://gist.github.com"]
-	helper = 
+	helper =
 	helper = !/usr/bin/gh auth git-credential
+# [gpg]
+#     program = gpg

@@ -2,6 +2,8 @@
 # OS Globals #
 ##############
 
+**/.claude
+
 # macOS #
 #########
 # General
@@ -110,4 +112,3 @@ tags
 # CLion #
 ###########
 **/.idea
-
